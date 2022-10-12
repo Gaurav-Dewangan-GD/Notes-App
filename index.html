@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note taking app tutorial by CodewithHarry</title>
+    <script src="./js/app.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- A navigation bar from BS copied!! -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">Notes App</a>
+            <form class="d-flex" role="search">
+                <input id="searchTxt"class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- This holds all the notes 
+    in one place and functions we need
+to operate on notes -->
+    <div class="container my-3">
+        <h1>Welcome to Note App</h1>
+
+        <!-- Text Area where the notes can be added
+        Ps. made using card component of BS -->
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Add a Note</h5>
+                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <div class="mb-3">
+                    <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                </div>
+                <button href="#" class="btn btn-primary" id="addBtn">Add Note</button>
+                <!-- <a href="#" class="card-link">Another link</a> -->
+            </div>
+        </div>
+        <hr>
+        <h1>Your Notes</h1>
+        <hr>
+        <!-- component to hold all notes 
+        as separate cards -->
+        <div id="notes" class="row container-fluid">
+            <!-- <div class="noteCard card my-2 mx-2" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Note Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Note title</h6>
+                    <p class="card-text">Some title</p>
+                    <button href="#" class="btn btn-primary" id="addBtn">Delete Note</button>
+                    <button href="#" class="card-link">Card link</button>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
